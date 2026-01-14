@@ -156,8 +156,11 @@
 	  <t hangText="Audience">
 	    <vspace/>
             A value that identifies the party intended to process the assertion.
-           The issuer identifier of the authorization server,
-           as defined in <xref target="RFC8414"/>, can be used to indicate that
+		   It is RECOMMENDED to use the URL to which the assertion is sent, if
+		   that URL is trusted. A URL is trusted e.g. because it was agreed upon
+		   out-of-band or if it is relative to the validated issuer URL of the
+		   authorization server, as defined in <xref target="RFC8414"/>.
+           The issuer URL can be used to indicate that
            the authorization server is a valid intended audience of the assertion.
 	  </t>
 	</list>
